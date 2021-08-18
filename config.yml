@@ -1,0 +1,75 @@
+# TODO
+# - projects page
+# - open links in about blank
+# - create way of dictating poems that is not code blocks
+# - make child of heaven readable on the web
+# - how to make titles not camel case
+
+baseURL: 'https://www.claytondunavant.com'
+languageCode: en-us
+title: Clayton's Corner
+theme: PaperMod
+  
+minify:
+  disableXML: true
+  minifyOutput: true
+
+author:
+  name: Clayton Dunavant
+  homepage: 'https://www.claytondunavant.com'
+
+menu:
+  main:
+    #- identifier: projects
+    #  name: projects
+    #  url: /projects/
+    #  weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: résumé
+      name: Résumé
+      url: /resume-dunavant.pdf 
+      weight: 40
+
+params:
+  env: production # enables google analytics and schema
+  defaultTheme: auto 
+
+  homeInfoParams:
+    Title: Welcome to My Corner of the Internet 
+    Content: > #css is PaperMod/assets/css/common/post-entry .entry-content img
+      ![its me](/imgs/me.jpg)
+
+      Hello!
+      I am Clayton Dunavant, and this is my website.
+      I am currently a sophomore studying Computer Science and Creative Writing at Purdue University.
+      I am also the Vice President of [Hack the Future](https://htfpurdue.org/): a Purdue student organization dedicated to helping make our community a better place by developing custom software for local nonprofits.
+      My hobbies include writing [code](/categories/computer-science) as well as [prose and poetry](/categories/computer-science/).  
+      Both of which you will find here on my website.
+      I also enjoy reading books, traveling, and meeting new people.
+      Hope you find something you like on here!
+      
+  assets:
+    disableHLJS: true #disable syntax highlighting
+      
+  socialIcons:
+    - name: github
+      url: "https://github.com/claytondunavant"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/clayton-dunavant-0332951b6/"
+    - name: email
+      url: "mailto:clayton@claytondunavant.com"
+    - name: RsS
+      url: 'index.html'
+
+
+  taxonomies:
+    category: categories
+    tag: tags
+    project: projects
