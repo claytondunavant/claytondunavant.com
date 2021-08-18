@@ -1,5 +1,6 @@
-#ignore builds 
+#ignore hugo stuff
 public/
+/resources/_gen/
 
 #ignore drafts
 *-DRAFT*
